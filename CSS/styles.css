@@ -92,15 +92,6 @@ h1,h2,h3 {
     background-color: var(--primario);
 }
 
-/* Contenido Box Div Main */
-/*.box-div {
-    margin: 0% 5%;
-    background-color: var(--muy-claro);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    box-shadow: 0.5rem;
-}*/
-
 /* Tipografías */ /* Casos Específicos */
 .xxsmall{font-size: 1.2rem;}
 .xsmall {font-size: 1.5rem;}
@@ -199,8 +190,8 @@ justify-content: center;
 }
 
 .servicio-ecommerce {
-    grid-column: 2;
-    grid-row: 1;
+    grid-column: 1;
+    grid-row: 2;
 }
 
 .servicio-diseño div, .servicio-ecommerce div{
@@ -213,9 +204,9 @@ justify-content: center;
     color: var(--muy-claro);
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .servicio-ecommerce{
-        grid-column: 1;
-        grid-row: 2;
+        grid-column: 2;
+        grid-row: 1;
     }
 }

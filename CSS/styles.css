@@ -178,3 +178,27 @@ justify-content: center;
     color: var(--muy-claro);
 }
 
+/* Servicios */
+.servicios {
+    max-width: 100rem;
+}
+
+.servicios > section {
+    padding: 1rem;
+    text-align: center;
+}
+
+.servicios {
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.servicio-diseño {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.servicio-ecommerce {
+    grid-column: 2;
+    grid-row: 1;
+}

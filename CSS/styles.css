@@ -202,3 +202,13 @@ justify-content: center;
     grid-column: 2;
     grid-row: 1;
 }
+
+.servicio-diseño div, .servicio-ecommerce div{
+    background-color: var(--oscuro);
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    display: inline-block;
+    padding-top: 2rem;
+    color: var(--muy-claro);
+}

@@ -212,3 +212,10 @@ justify-content: center;
     padding-top: 2rem;
     color: var(--muy-claro);
 }
+
+@media (max-width: 768px) {
+    .servicio-ecommerce{
+        grid-column: 1;
+        grid-row: 2;
+    }
+}

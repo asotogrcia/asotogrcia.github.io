@@ -71,7 +71,7 @@ h1,h2,h3 {
 
 .boton {
     padding: 1rem 3rem;
-    background-color: var(--secundario);
+    background-color: var(--oscuro);
     border-radius: 0.5rem;
     color: var(--muy-claro);
     margin-top: 1rem;
@@ -112,7 +112,7 @@ h1,h2,h3 {
 
 /* Nav Principal */
 .nav-bg{
-    background-color: var(--secundario) ;
+    background-color: var(--oscuro) ;
 }
 
 .nav-principal {

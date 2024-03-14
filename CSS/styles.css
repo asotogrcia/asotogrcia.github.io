@@ -56,6 +56,10 @@ h1,h2,h3 {
     text-align: center;
 }
 
+/* section {
+    display: grid;
+} */
+
 .container {
     max-width: 100rem;
     margin: 0 auto;
@@ -210,3 +214,5 @@ justify-content: center;
         grid-row: 1;
     }
 }
+
+/* Formulario Contacto */

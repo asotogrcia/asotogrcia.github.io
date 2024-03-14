@@ -36,7 +36,6 @@
     <section class="hero">
         <div class="contenido-hero">
             <h2> Diseño y Desarrollo Web Freelance </h2>
-
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="60" height="60"
                 viewBox="0 0 24 24" stroke-width="1.5" stroke="#f9f5f5" fill="none" stroke-linecap="round"
                 stroke-linejoin="round">
@@ -46,9 +45,8 @@
             </svg>
             <p>Valdivia, Chile</p>
             <a class="boton xsmall" href="#">Contactar</a>
-        </div>
-
-    </section>
+        </div> <!-- .contenido-hero -->
+    </section> <!-- .hero -->
 
     <!-- Main -->
     <main class="container sombra">
@@ -57,11 +55,8 @@
         <div class="servicios">
 
             <section class="servicio-diseño">
-
                 <div>
-                    
                     <h3>Diseño Web</h3>
-
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-palette" width="60"
                         height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f9f5f5" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -72,19 +67,14 @@
                         <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
                         <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
                     </svg>
-                
                 </div>
-
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
                     adipisicing elit.</p>
             </section> <!-- .servicio-diseño -->
 
             <section class="servicio-ecommerce">
-
                 <div>
-                    
                     <h3>E-Commerce</h3>
-
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card" width="60"
                         height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f9f5f5" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -99,46 +89,38 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
                     adipisicing elit.</p>
             </section> <!-- .servicio-ecommerce -->
-
         </div> <!-- .servicios -->
 
-    </main>
-
-    <!-- Formulario-->
-    <section>
-        <h2>Contacto</h2>
-
-        <form action="">
+        <section class="section-form">
+            <h2>Contacto</h2>
             <fieldset>
-                <legend>Contáctanos llenando todos los campos</legend>
+                <legend> Rellene este formulario para contactarnos </legend>
+                <form action="" class="form-contacto">
+                    <div>
+                        <label for="">Nombre:</label>
+                        <input type="text" placeholder="Tu nombre">
+                    </div>
 
-                <div>
-                    <label for="">Nombre:</label>
-                    <input type="text" placeholder="Tu nombre">
-                </div>
+                    <div>
+                        <label for="">Número:</label>
+                        <input type="tel" placeholder="Tu número">
+                    </div>
 
-                <div>
-                    <label for="">Número:</label>
-                    <input type="tel" placeholder="Tu número">
-                </div>
+                    <div>
+                        <label for="">Correo:</label>
+                        <input type="email" placeholder="Tu correo">
+                    </div>
 
-                <div>
-                    <label for="">Correo:</label>
-                    <input type="email" placeholder="Tu correo">
-                </div>
+                    <div>
+                        <label for="">Mensaje:</label>
+                        <textarea></textarea>
+                    </div>
 
-                <div>
-                    <label for="">Mensaje:</label>
-                    <textarea></textarea>
-                </div>
-
-                <input type="submit" value="Enviar" class="boton">
-
+                    <input type="submit" value="Enviar" class="boton">
+                </form> <!-- .form-contacto -->
             </fieldset>
-        </form>
-    </section>
-
-
+        </section> <!-- .section-form -->
+    </main>
 
     <!-- Footer -->
     <footer class="xxsmall">

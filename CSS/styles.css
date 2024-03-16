@@ -169,6 +169,22 @@ justify-content: center;
 }
 
 
+/* Header Container / Logo */
+.header-container {
+    display: flex;
+    justify-content: center;
+}
+
+.header-container h1 {
+    padding-top: 0.5rem;
+}
+
+.logo-ca {
+    width: 5%;
+    height: 5%;
+}
+
+
 /* Servicios */
 .servicios {
     display: grid;

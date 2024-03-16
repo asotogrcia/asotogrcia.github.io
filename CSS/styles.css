@@ -11,10 +11,9 @@
     --terciario: #5e6063;
     --cuaternario: #737679;
 
-    /* Tamaño Letra */
+    /* Grosor Letra */
     --min-bold: 550px;
 }
-
 
 /* GLOBALES */
 html {
@@ -55,10 +54,6 @@ h3 {
 h1,h2,h3 {
     text-align: center;
 }
-
-/* section {
-    display: grid;
-} */
 
 .container {
     max-width: 100rem;
@@ -173,32 +168,30 @@ justify-content: center;
     color: var(--muy-claro);
 }
 
+
 /* Servicios */
 .servicios {
-    max-width: 100rem;
-}
-
-.servicios > section {
-    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     text-align: center;
 }
 
-.servicios {
-    display: grid;
-    grid-auto-rows: minmax(300px, auto);
+@media (max-width: 768px) {
+    .servicios {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+    }
 }
 
-.servicio-diseño {
-    grid-column: 1;
-    grid-row: 1;
+.servicios .servicio {
+    padding: 1rem 2rem;
+    margin: 1rem;
+    background-color: rgba(0,0,0, 0.1);
+    border-radius: 5%;
+
 }
 
-.servicio-ecommerce {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.servicio-diseño div, .servicio-ecommerce div{
+.servicios .servicio div {
     background-color: var(--oscuro);
     width: 15rem;
     height: 15rem;
@@ -208,11 +201,9 @@ justify-content: center;
     color: var(--muy-claro);
 }
 
-@media (min-width: 768px) {
-    .servicio-ecommerce{
-        grid-column: 2;
-        grid-row: 1;
-    }
-}
+.servicio p {
+    text-align: center;
+    font-size: 1.4rem;
+} 
 
 /* Formulario Contacto */

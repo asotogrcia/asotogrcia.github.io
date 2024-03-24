@@ -12,7 +12,7 @@
     --cuaternario: #737679;
 
     /* Grosor Letra */
-    --min-bold: 550px;
+    --min-bold: 550;
 }
 
 /* GLOBALES */
@@ -77,11 +77,11 @@ h1,h2,h3 {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: var(--min-bold);
-    width: 90%;
+    width: 15rem;
     text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .boton {
         width: auto;
     }
@@ -107,6 +107,7 @@ h1,h2,h3 {
 /* Textos */ /* Casos Específicos */
 .no-decoration {text-decoration: none;}
 .align-items-center {align-items: center;}
+.min-bold{font-weight: var(--min-bold);}
 
 
 /* Nav Principal */
@@ -223,3 +224,53 @@ justify-content: center;
 } 
 
 /* Formulario Contacto */
+.section-form {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3rem;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.section-form fieldset {
+    border: none;
+}
+
+.section-form legend {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.section-form .form-contacto {
+    display: grid;
+    height: 20rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.form-contacto div label {
+    grid-column-start: 1/2;
+}
+
+/* .form-contacto {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.form-contacto div {
+    display: flex;
+}
+
+.form-contacto div label {
+    grid-column: 1 / 2;
+}
+
+.form-contacto div :is(
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    textarea) {
+        grid-column: 2 / 3;
+    } */
+
+
+
